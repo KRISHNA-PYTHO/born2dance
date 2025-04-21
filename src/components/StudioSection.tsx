@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { cn } from '@/lib/utils';
 import { MapPin } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -44,9 +43,6 @@ const StudioSection: React.FC = () => {
       duration: 0.6,
       ease: "power3.out"
     }, "-=0.3");
-
-    // Create map markers
-    createMapMarkers();
   }, []);
 
   const createMapMarkers = () => {
